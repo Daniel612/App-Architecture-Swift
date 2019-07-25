@@ -4,8 +4,11 @@ Some simple projects to show how app architecture work in swift.
 ## MVC
 
 Controller 拥有对 Model 和 View 的强引用，反之没有。
+
 Controller 在初始化的时候应该设置 Model 的默认值并对它进行观察（Notification、KVO)
+
 View 可以通过 target-action、delegate、datasource 把状态数据返回给 Controller
+
 Model 中可以在属性的设置方法中添加发送通知的操作
 
 ## MVP
